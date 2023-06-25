@@ -63,7 +63,7 @@ msg_info "Installing Yarn"
 $STD npm install --global yarn
 msg_ok "Installed Yarn"
 
-RELEASE=$(curl -s https://api.github.com/repos/NginxProxyManager/nginx-proxy-manager/releases/tags/v2.10.2 |
+RELEASE=$(curl -s https://api.github.com/repos/NginxProxyManager/nginx-proxy-manager/releases/tags/v2.9.22 |
   grep "tag_name" |
   awk '{print substr($2, 3, length($2)-4) }')
 
